@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabor - Aplicación SPA para explorar, consultar y comparar recetas de cocina en tiempo real utilizando la API de TheMealDB.">
+  <title>Sabor | Explora y Compara Recetas</title>
+  
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
+
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="Sabor - Ir al inicio">
+        <span class="logo-icon">🍳</span>
+        <span class="logo-text">Sabor</span>
+      </a>
+
+  
+      <nav id="navbar-container" class="main-nav" aria-label="Navegación principal">
+   
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="app-view-container" class="main-content" aria-live="polite">
+
+  </main>
+
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 <strong>Sabor</strong>. Desarrollado con JavaScript Vanilla (SPA).</p>
+      <p class="api-attribution">Datos proporcionados en tiempo real por <a href="https://www.themealdb.com/api.php" target="_blank" rel="noopener noreferrer">TheMealDB</a>.</p>
+    </div>
+  </footer>
+
+ 
+  <script src="js/servicios/api.js"></script>
+  <script src="js/servicios/cache.js"></script>
+  <script src="js/servicios/recetas.js"></script>
+  <script src="js/servicios/comparacion.js"></script>
+
+
+  <script src="js/componentes/EstadoCarga.js"></script>
+  <script src="js/componentes/BarraNavegacion.js"></script>
+  <script src="js/componentes/TarjetaReceta.js"></script>
+  <script src="js/componentes/Paginador.js"></script>
+  <script src="js/componentes/FormularioBusqueda.js"></script>
+  <script src="js/componentes/ListaIngredientes.js"></script>
+  <script src="js/componentes/PasosPreparacion.js"></script>
+  <script src="js/componentes/PanelComparador.js"></script>
+  <script src="js/componentes/TablaComparacion.js"></script>
+
+
+  <script src="js/vistas/VistaInicio.js"></script>
+  <script src="js/vistas/VistaExplorar.js"></script>
+  <script src="js/vistas/VistaDetalle.js"></script>
+  <script src="js/vistas/VistaCategoriasOrigenes.js"></script>
+  <script src="js/vistas/VistaComparador.js"></script>
+
+
+  <script src="js/app.js"></script>
+
 </body>
 </html>
